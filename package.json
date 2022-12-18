@@ -1,0 +1,22 @@
+{
+  "name": "strapi-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"cd server && yarn run dev\" \"cd client && yarn run dev\"",
+    "start": "concurrently \"cd server && yarn run start\" \"cd client && yarn run start\"",
+    "build": "concurrently \"cd server && yarn run build\" \"cd client && yarn run build\"",
+    "prepare": "husky install"
+  },
+  "author": "Maksim Kryvosheia",
+  "license": "MIT"
+}
